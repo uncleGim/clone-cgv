@@ -1,0 +1,52 @@
+/* VIDEO SECTION */
+#video-section {
+  display: flex;
+  justify-content: center;
+  background: #000;
+  height: 498px;
+}
+#video-section .inner {
+  position: relative;
+  overflow: hidden;
+}
+#video-section .control {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 995px;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    #000 0%,
+    rgba(0, 0, 0, 0.25) 25%,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.25) 75%,
+    #000 100%
+  );
+}
+#video-section .control .title {
+  color: #fff;
+  text-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.72);
+  font-size: 40px;
+  font-family: Noto Sans KR;
+  font-weight: 700;
+  line-height: 58px;
+  margin-bottom: 11px;
+}
+
+#video-section .control p {
+  color: #fff;
+  font-size: 20px;
+  font-family: Noto Sans KR;
+  font-weight: 350;
+  line-height: 29px;
+  margin-bottom: 18px;
+}
+
+#video-section .button-row {
+  display: flex;
+  gap: 10px;
+}

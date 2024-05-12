@@ -13,7 +13,22 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
     <link href="./css/index.css" type="text/css" rel="stylesheet" />
+    <link href="./css/header.css" type="text/css" rel="stylesheet" />
+    <link href="./css/video-section.css" type="text/css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
     <script type="text/javascript" src="./script/script.js" defer></script>
   </head>
   <body>
@@ -142,12 +157,95 @@
         </div>
       </div>
     </header>
-    <section>내용</section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <footer></footer>
+    <section id="video-section">
+      <div class="inner">
+        <video autoplay="" muted="">
+          <source
+            src="https://adimg.cgv.co.kr/images/202306/SpiderMan/0621_SAU_1080x608.mp4"
+            type="video/mp4"
+          />
+          이 브라우저는 Video 태그를 지원하지 않습니다. (Your browser does not
+          support the video tag.)
+        </video>
+        <div class="control">
+          <h3 class="title">스파이더맨: 어크로스 더 유니버스</h3>
+          <p>전체 예매율 압도적 1위!<br />이번주 극장에서 확인 ▶</p>
+          <div class="button-row">
+            <div class="btn-gray round-btn">
+              <div>상세보기</div>
+              <i class="ti ti-chevron-right"></i>
+            </div>
+            <img src="./img/Link.svg" />
+            <img src="./img/Link-1.svg" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="chart-section">
+      <div class="inner">
+        <div class="tab-row">
+          <h3 class="tab-btn">
+            <span class="active" id="movie-btn">무비 차트</span>
+          </h3>
+          <div class="line"></div>
+          <h3 class="tab-btn"><span id="reserve-tab">상영예정작</span></h3>
+      </div>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="poster-card">
+              <div class="card-hover">
+                <button>상세보기</button>
+                <button>예매하기</button>
+              </div>
+              <div class="card-info">
+                <div class="card-age"></div>
+                <div class="card-rank"></div>
+              </div>
+              <div>댓글부대</div>
+              <div>
+                egg image 81% 예매율 16.7%
+              </div>
+            </div>
+            <div class="poster-card">
+              <div class="card-hover">
+                <button>상세보기</button>
+                <button>예매하기</button>
+              </div>
+              <div class="card-info">
+                <div class="card-age"></div>
+                <div class="card-rank"></div>
+              </div>
+              <div>댓글부대</div>
+              <div>
+                egg image 81% 예매율 16.7%
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+    <section id="event-section"></section>
+    <section id="place-section"></section>
+    <section id="place-section"></section>
+    <section id="gift-section"></section>
+    <section id="notice-section"></section>
+    <footer>
+      <!-- <ul class="footer-menu"> 
+        
+      </ul>
+      <div>
+        <div></div>
+        <div>
+          <select></select>
+          <button>GO</button>
+        </div>
+      </div> -->
+    </footer>
   </body>
 </html>
