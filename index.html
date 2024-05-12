@@ -159,7 +159,7 @@
     </header>
     <section id="video-section">
       <div class="inner">
-        <video autoplay="" muted="">
+        <video autoplay="" muted id="mainVideo">
           <source
             src="https://adimg.cgv.co.kr/images/202306/SpiderMan/0621_SAU_1080x608.mp4"
             type="video/mp4"
@@ -175,11 +175,11 @@
               <div>상세보기</div>
               <i class="ti ti-chevron-right"></i>
             </div>
-            <button class="video-btn">
-              <i class="ti ti-player-play"></i>
+            <button class="video-btn" id="playBtn">
+              <i class="ti ti-player-pause" id="playIcon"></i>
             </button>
-            <button class="video-btn">
-              <i class="ti ti-volume-3"></i>
+            <button class="video-btn" id="muteBtn">
+              <i class="ti ti-volume-3" id="muteIcon"></i>
             </button>
           </div>
         </div>
